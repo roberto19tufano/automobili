@@ -1,0 +1,4 @@
+id : [id]
+nomeModello: [nomeModello]
+anno: [anno]
+brand: [brand]
