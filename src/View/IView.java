@@ -1,14 +1,13 @@
 package View;
 
-import Model.Auto;
-
 import java.util.List;
 import Controller.Request;
-
+import it.contrader.concessionaria.DTO.CasaAutomobilisticaDTO;
 
 
 public interface IView {
-    public Void showResults (Request request);
+    public List<CasaAutomobilisticaDTO> showResults (Request request);
 
 
 }
+
