@@ -1,7 +1,7 @@
-package View;
+package it.contrader.concessionaria.View;
 import java.util.List;
 
-import Controller.Request;
+import it.contrader.concessionaria.Controller.Request;
 import it.contrader.concessionaria.DTO.CasaAutomobilisticaDTO;
 
 public class View extends AbstractView{
@@ -9,10 +9,10 @@ public class View extends AbstractView{
     private String choice;
 
     public View() {
-
+        System.out.println("arriva qui");
     }
     @Override
-    public List<CasaAutomobilisticaDTO> showResults(Request request) {
+    public List<CasaAutomobilisticaDTO> showResults1(Request request) {
             System.out.println("\n------------------ Ecco le auto:----------------\n");
             System.out.println("----------------------------------------------------\n");
             @SuppressWarnings("unchecked")
@@ -22,6 +22,16 @@ public class View extends AbstractView{
             System.out.println();
             return autoDTOList;
         }
+
+    @Override
+    public void showResults(Request request) {
+
+    }
+
+    @Override
+    public void showOptions() {
+
+    }
 
 
 }

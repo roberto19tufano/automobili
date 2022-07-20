@@ -1,4 +1,4 @@
-package Controller;
+package it.contrader.concessionaria.Controller;
 import Main.MainDispatcher;
 import it.contrader.concessionaria.service.AutoService;
 
@@ -13,12 +13,16 @@ public class CasaAutomobilisticaController implements Controller {
     }
 
 
+
     @Override
     public void doControl(Request request) {
+
+
         MainDispatcher.getInstance().callView("View", request);
 
-    }
 
+        /* MainDispatcher.getInstance().callView(sub_package + "AutoRead", request);*/
+    }
 
 }
 

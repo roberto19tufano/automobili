@@ -1,4 +1,4 @@
-package View;
+package it.contrader.concessionaria.View;
 
 import java.util.Scanner;
 

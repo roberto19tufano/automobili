@@ -1,7 +1,7 @@
 package it.contrader.concessionaria.converter;
 
 
-    import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 
 import it.contrader.concessionaria.DTO.CasaAutomobilisticaDTO;
@@ -10,7 +10,7 @@ import Model.Auto;
 
     public class AutoConverter {
 
-        public CasaAutomobilisticaDTO toDTO(Auto auto) {
+        public static CasaAutomobilisticaDTO toDTO(Auto auto) {
             CasaAutomobilisticaDTO casaAutomobilisticaDTO = new CasaAutomobilisticaDTO(auto.getIdAuto(), auto.getNomeModello(), auto.getAnno(),
                     auto.getBrand());
             return casaAutomobilisticaDTO;

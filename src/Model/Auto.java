@@ -40,6 +40,9 @@ public class Auto {
     public void setAnno(int anno){
         this.anno = anno;}
 
+    public void setId(int id) {
+        this.id = id;
+    }
     @Override
     public String toString() {
         return  id  + nomeModello +  brand  + anno;
